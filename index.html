@@ -3,209 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josekutty Cheriyan | Executive Resume</title>
+    <title>Josekutty Cheriyan | Digital Executive Profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <!-- PDF & Tilt Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-    <!--Favicon-->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/26bad52fa4.js" crossorigin="anonymous"></script>
+    
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <canvas id="stardust-canvas"></canvas>
 
     <div class="page-container" id="resume-to-download">
         <!-- ===== LEFT SIDEBAR ===== -->
-        <aside class="sidebar">
-            <div class="sidebar-content">
-                <div class="profile-section">
-                    <img src="profile.jpeg" alt="Josekutty Cheriyan" class="profile-pic">
-                    <h1 class="name">Josekutty Cheriyan</h1>
-                    <p class="tagline">Multi-Disciplinary Professional <br> Tech • Management • Operations</p>
+        <!-- ===== LEFT SIDEBAR ===== -->
+        <div class="sidebar-wrapper">
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <div class="profile-section">
+                        <img src="profile.jpeg" alt="Josekutty Cheriyan" class="profile-pic">
+                        <h1 class="name">JC</h1>
+                        <p class="full-name">Josekutty Cheriyan</p>
+                        <p class="tagline">Technology • Strategy • Leadership</p>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <h3>Contact</h3>
+                        <a class="contact-link" href="mailto:josekutty01@gmail.com">josekutty01@gmail.com</a>
+                        <a class="contact-link" href="tel:+19402188709">+1 (940) 218-8709</a>
+                        <p>Denton, TX 76209</p>
+                    </div>
+                    
+                    <div class="sidebar-block">
+                         <h3>Core Skills</h3>
+                         <div class="interactive-skills-grid">
+                            <!-- Technical Skills -->
+                            <div class="skill-icon-wrap" data-skill="Cybersecurity"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Python"><svg viewBox="0 0 24 24"><path d="M13.26 16.26l-1.41 1.41L7.71 13.5l4.14-4.14L13.26 10.5l-2.72 2.72 2.72 3.04zM16.26 7.74l1.41-1.41L21.81 10.5l-4.14 4.14-1.41-1.41L19 10.5l-2.74-2.76z M10.5 19.81l-4.14-4.14L7.77 14.26l2.73 2.73-3.04 2.72zm-2.76-13.07l-1.41 1.41L2.19 13.5l4.14 4.14 1.41-1.41L4.97 13.5l2.77-2.76z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="SQL/Databases"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8s8 3.58 8 8v1c-2.55 0-4.73.88-6.42 2.34C9.27 14.47 8 12.83 8 11c0-1.48 1.4-2.72 3.2-3l-2.13-2.13C6.44 6.75 4 9.17 4 12zm8 8c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Leadership"><svg viewBox="0 0 24 24"><path d="M16.5 12c1.38 0 2.5-1.12 2.5-2.5S17.88 7 16.5 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 3-1.34 3-3S10.66 5 9 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Financial Acumen"><svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Logistics"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm13.5-8.5l1.96 2.5H17V9.5h2.5zM18 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Problem-Solving"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 4a2 2 0 110 4 2 2 0 010-4zm0 14c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.3-.84-2.4-2-2.82V10h-2v2.18c1.16.41 2 1.51 2 2.82 0 1.66-1.34 3-3 3z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Communication"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Adaptability"><svg viewBox="0 0 24 24"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Strategic Thinking"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg></div>
+                         </div>
+                    </div>
+                    
+                    <!-- NEWLY ADDED TECHNICAL SKILLS SECTION -->
+                    <div class="sidebar-block">
+                        <h3>Technical Proficiencies</h3>
+                        <div class="tech-skills-list">
+                            <h4>Cybersecurity</h4>
+                            <p>SIEM Tools, IDS, Network Security, Vulnerability Assessment, Risk Management, Threat Mitigation</p>
+                            <h4>Python & Web Development</h4>
+                            <p>Python, Django, Flask, JavaScript, HTML5, CSS3, REST APIs, Git</p>
+                            <h4>Databases & Cloud</h4>
+                            <p>SQL, MySQL, MS SQL Server, AWS (Foundational)</p>
+                            <h4>Design Software</h4>
+                            <p>Adobe Photoshop, Adobe Illustrator, CorelDraw</p>
+                        </div>
+                    </div>
+                    <!-- END OF NEW SECTION -->
+
+                    <div class="sidebar-block">
+                        <h3>Licenses & Credentials</h3>
+                        <p><strong>CDL</strong>: Class B (P, S Endorsements)</p>
+                        <p><strong>Aviation (FAA)</strong>: Student Pilot License</p>
+                        <p><strong>Retail</strong>: Food Handler (Manager), Alcohol & Tobacco Seller</p>
+                    </div>
+                    
+                    <button id="download-btn">Download PDF Brief</button>
                 </div>
-
-                <button id="download-btn">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V16M12 16L16 12M12 16L8 12M4 20H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    Download Executive Brief (PDF)
-                </button>
-
-                <div class="sidebar-block">
-                    <h3>Contact</h3>
-                    <p><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> josekutty01@gmail.com</p>
-                    <p><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +1 (940) 218-8709</p>
-                    <p><svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Denton, TX 76209</p>
-                </div>
-
-                <div class="sidebar-block">
-                    <h3>Key Competencies</h3>
-                    <p class="skill-category">Cybersecurity</p>
-                    <div class="skill-tags"><span>SIEM Tools</span><span>IDS</span><span>Risk Management</span><span>Vulnerability Assessment</span><span>Network Security</span></div>
-                    <p class="skill-category">Development & Database</p>
-                    <div class="skill-tags"><span>Python</span><span>Django</span><span>Flask</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>MySQL</span><span>HTML5</span><span>CSS</span><span>Git</span><span>AWS</span></div>
-                    <p class="skill-category">Management & Operations</p>
-                    <div class="skill-tags"><span>Leadership</span><span>Team Management</span><span>Financial Acumen</span><span>Inventory Control</span><span>Sales Strategy</span><span>Loss Prevention</span></div>
-                    <p class="skill-category">Design</p>
-                    <div class="skill-tags"><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Coral Draw</span></div>
-                </div>
-
-                <div class="sidebar-block">
-                    <h3>Licenses</h3>
-                    <p><strong>Commercial Driver's License (CDL)</strong></p>
-                    <p>Class: B | State: TX</p>
-                    <p>Endorsements: P (Passenger), S (School bus)</p>
-                    <br>
-                    <p><strong>Student Pilot License (FAA)</strong></p>
-                    <p>Rating: XII | State: TX</p>
-                    <p>Endorsements: P (Passenger), S (School bus)</p>
-                </div>
-
-                <div class="sidebar-block">
-                    <h3>Retail Licenses</h3>
-                    <p><strong>Food Handler Certification</strong></p>
-                    <p>Level: Manager  | State: TX</p>
-                    <br>
-                    <p><strong>Tobaco & Alcahol Certification</strong></p>
-                    <p>Level: Seller  | State: TX</p>
-
-                </div>
-
-                 <div class="sidebar-block">
-                    <h3>Languages</h3>
-                    <p>English (Fluent), Malayalam (Fluent)</p>
-                </div>
-            </div>
-        </aside>
+            </aside>
+        </div>
 
         <!-- ===== RIGHT MAIN CONTENT ===== -->
         <main class="main-content">
-            <section class="scroll-reveal">
+            <section>
                 <h2>Executive Summary</h2>
-                <p>A uniquely versatile and results-oriented professional offering a rare blend of deep technical expertise, proven leadership, and hands-on operational experience. My career is a deliberate progression, building from creative design and marketing strategy to full-stack Python development, and now culminating in certified Cybersecurity expertise. This journey has cultivated a holistic perspective, enabling me to not only develop secure and efficient systems but also to manage the teams, budgets, and operational logistics required to implement them effectively. I excel at bridging the gap between technical objectives and real-world business execution.</p>
+                <p>A dynamic professional whose career forms a unique constellation of skills across technology, leadership, and complex operational domains. I translate high-level strategy into ground-level execution, leveraging a rare synthesis of full-stack development, certified cybersecurity expertise, and proven P&L management. My journey—from graphic design to Python development to managing logistical operations—has cultivated a unique ability to build secure, efficient systems while understanding the human and business frameworks they serve. I am an integrator, positioned to bridge the critical gap where technical innovation meets tangible results.</p>
             </section>
-
-            <section class="scroll-reveal">
+            
+            <section>
                 <h2>Professional Certifications</h2>
-                <div class="cert-grid">
+                <div class="card-grid">
                     <div class="cert-card" data-tilt>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="cert-logo">
-                        <h3>Google Cybersecurity</h3>
-                        <h4>Professional Certificate</h4>
-                        <a href="https://coursera.org/verify/professional-cert/G6LK9NTLRPX2" target="_blank">Verify Credential</a>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo">
+                        <div>
+                            <h3>Google Cybersecurity</h3>
+                            <a href="https://coursera.org/verify/professional-cert/G6LK9NTLRPX2" target="_blank">Verify Credential</a>
+                        </div>
                     </div>
                     <div class="cert-card" data-tilt>
-                        <img src="um.png" alt="University of Michigan Logo" class="cert-logo michigan">
-                        <h3>Python for Everybody</h3>
-                        <h4>Specialization</h4>
-                        <a href="https://coursera.org/verify/specialization/QV6DKU2GFDLY" target="_blank">Verify Credential</a>
+                        <img src="um.png" alt="University of Michigan Logo" class="michigan-logo">
+                         <div>
+                            <h3>Python for Everybody</h3>
+                            <a href="https://coursera.org/verify/specialization/QV6DKU2GFDLY" target="_blank">Verify Credential</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="scroll-reveal">
+            <section>
                 <h2>Professional Experience</h2>
                 <div class="timeline">
                     <!-- Tech & Management Experience First -->
-                    <div class="job-entry scroll-reveal">
-                        <h3>Python Developer (Hybrid)</h3>
-                        <h4>Tettares | Madiwala, Bangalore, India</h4>
-                        <h5>Jan 2013 - Oct 2015</h5>
-                        <ul>
-                            <li>Developed entire frontend and backend modules using Python on Django, implementing MVT/MVC architecture.</li>
-                            <li>Engineered RESTful services using the Flask framework.</li>
-                            <li>Managed source code repository using Git and automated a full CI system with Jenkins, MySQL, Python, and Bash.</li>
-                            <li>Utilized PyQt for UI functionality and wrote Python scripts to parse XML and interface with databases.</li>
-                        </ul>
-                    </div>
-                    <div class="job-entry scroll-reveal">
-                        <h3>Store Manager</h3>
-                        <h4>7-Eleven | Denton, TX</h4>
-                        <h5>Nov 2018 - Apr 2021</h5>
-                        <ul>
-                            <li>Directed all store operations, including hiring, training, and supervising employees to deliver excellent customer service.</li>
-                            <li>Managed inventory control, product ordering, daily sales, and cash flow to meet and exceed budgetary goals.</li>
-                            <li>Implemented marketing initiatives and monitored security measures, significantly reducing inventory discrepancies.</li>
-                        </ul>
-                    </div>
-                    <div class="job-entry scroll-reveal">
-                        <h3>Marketing Manager</h3>
-                        <h4>ColorBar Events | Bangalore, India</h4>
-                        <h5>Jan 2012 - Dec 2013</h5>
-                        <ul>
-                            <li>Led market research and coordinated with creative staff to develop and launch effective campaigns.</li>
-                            <li>Analyzed campaign data to evaluate success, improve brand marketing, and enhance store visibility.</li>
-                        </ul>
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <i class="fa-brands fa-python"></i>
+                            <div class="job-title-group">
+                                <h3>Python Developer (Hybrid)</h3>
+                                <h4>Tettares | Bangalore, India | 2013 - 2015</h4>
+                            </div>
+                        </div>
+                        <p>Architected full-stack modules on Django, engineered RESTful services with Flask, and automated a CI/CD pipeline, demonstrating expertise in MVT/MVC design and DevOps principles.</p>
                     </div>
 
-                    <!-- Operations & Logistics Experience -->
-                     <div class="job-entry scroll-reveal">
-                        <h3>School Bus Driver</h3>
-                        <h4>National Express | Aubrey, TX</h4>
-                        <h5>Nov 2024 - <u>Present</u></h5>
-                        <p>Ensure the safe and timely transport of students, adhering to all traffic and safety regulations while managing student conduct.</p>
-                    </div>
-                     <div class="job-entry scroll-reveal">
-                        <h3>Delivery Driver</h3>
-                        <h4>Self Employed | Denton, TX</h4>
-                        <h5>Mar 2022 - Sep 2023</h5>
-                        <p>Managed independent delivery logistics, optimizing routes with GPS for timeliness and ensuring high levels of customer satisfaction.</p>
-                    </div>
-                    <div class="job-entry scroll-reveal">
-                        <h3>Bus Driver</h3>
-                        <h4>DCTA | Denton, TX</h4>
-                        <h5>Jan 2018 - May 2018</h5>
-                        <p>Operated public transit vehicles, ensuring passenger safety and adherence to strict schedules and routes.</p>
-                    </div>
-                    <div class="job-entry scroll-reveal">
-                        <h3>School Bus Driver</h3>
-                        <h4>Denton ISD Transportation | Denton, TX</h4>
-                        <h5>Aug 2017 - Dec 2017</h5>
-                        <p>Conducted pre-trip inspections, supervised students, and maintained communication with school officials and parents.</p>
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <i class="fa-solid fa-shop-lock"></i>
+                             <div class="job-title-group">
+                                <h3>Store Manager</h3>
+                                <h4>7-Eleven | Denton, TX | 2018 - 2021</h4>
+                            </div>
+                        </div>
+                        <p>Commanded all store operations, holding full P&L responsibility, managing staff lifecycle, and driving sales growth through targeted marketing and stringent loss prevention protocols.</p>
                     </div>
 
-                    <!-- Foundational Experience -->
-                    <div class="job-entry scroll-reveal">
-                        <h3>Direct Support Professional Staff (DSP I)</h3>
-                        <h4>Denton State Living Supported Centre | Denton, TX</h4>
-                        <h5>Mar 2016 - Dec 2016</h5>
-                        <p>Assisted clients with daily living activities, monitored health, and served as an advocate to ensure their rights and preferences were respected.</p>
+                    <div class="job-entry">
+                         <div class="job-header">
+                             <i class="fa-solid fa-people-roof"></i>
+                            <div class="job-title-group">
+                                <h3>Marketing Manager</h3>
+                                <h4>ColorBar Events | Bangalore, India | 2012 - 2013</h4>
+                            </div>
+                        </div>
+                        <p>Led data-driven market research and coordinated creative teams to develop and launch campaigns that significantly increased brand exposure and market penetration.</p>
                     </div>
-                     <div class="job-entry scroll-reveal">
-                        <h3>Jr. Graphic Designer</h3>
-                        <h4>Eblits Inc | Koramangala, Bangalore, India</h4>
-                        <h5>Jun 2008 - Dec 2009</h5>
-                        <p>Produced logos, banners, and interfaces, collaborating with the creative team from concept to project launch.</p>
+                    
+                    <div class="job-entry">
+                         <div class="job-header">
+                             <i class="fa-solid fa-bus"></i>
+                            <div class="job-title-group">
+                                <h3>School Bus / Public Transit Driver</h3>
+                                <h4>National Express, DCTA, Denton ISD | 2017 - Present</h4>
+                            </div>
+                        </div>
+                        <p>Entrusted with ensuring the safe, reliable, and timely transport of passengers, requiring strict adherence to federal/state safety protocols and precise logistical scheduling.</p>
                     </div>
-                    <div class="job-entry scroll-reveal">
-                        <h3>Custodian</h3>
-                        <h4>Sodexo | Lewisville, TX</h4>
-                        <h5>Dec 2015 - Feb 2016</h5>
-                        <p>Maintained facility cleanliness and safety, managed cleaning supply inventory, and performed minor repairs.</p>
+
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <i class="fa-solid fa-palette"></i>
+                             <div class="job-title-group">
+                                <h3>Jr. Graphic Designer</h3>
+                                <h4>Eblits Inc | Bangalore, India | 2008 - 2009</h4>
+                            </div>
+                        </div>
+                        <p>Translated high-level project requirements into compelling visual assets, producing logos, banners, and UI components from initial concept to final launch.</p>
                     </div>
                 </div>
             </section>
             
-            <section class="scroll-reveal">
+            <section>
                 <h2>Education</h2>
-                <div class="edu-grid">
+                <div class="card-grid">
                     <div class="edu-item">
-                        <h3>Associate Degree, Business Administration & Hospitality Management</h3>
-                        <p>Nanyang Institute of Management Studies | 2010 - 2012</p>
+                        <i class="fa-solid fa-building-columns"></i>
+                        <div>
+                            <h3>Associate Degree, Business & Hospitality</h3>
+                            <p>Nanyang Institute of Management</p>
+                        </div>
                     </div>
                     <div class="edu-item">
-                        <h3>Bachelor of Science, Computer and Information Science</h3>
-                        <p>Manipal University | 2008 - 2011</p>
-                    </div>
-                    <div class="edu-item">
-                        <h3>Diploma, Hospitality and Business Education</h3>
-                        <p>Frankfinn Institute of Hospitality | 2009 - 2010</p>
+                        <i class="fa-solid fa-school-flag"></i>
+                        <div>
+                            <h3>Bachelor of Science, Computer Science</h3>
+                            <p>Manipal University</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+    
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,264 +1,209 @@
-/* --- Global Styles & "Phoenix" Theme --- */
+/* --- "Project Singularity" Theme --- */
 :root {
-    --bg-dark: #121212;
-    --bg-card: #1E1E1E;
-    --bg-sidebar: #0D0D0D;
-    --text-primary: #E0E0E0;
-    --text-secondary: #A0A0A0;
-    --accent-phoenix: #FF8C00; /* Vibrant Orange */
-    --accent-phoenix-glow: rgba(255, 140, 0, 0.3);
-    --border-color: #2a2a2a;
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --bg-void: #010413;
+    --bg-glass: rgba(10, 25, 47, 0.5);
+    --border-glass: rgba(43, 83, 139, 0.3);
+    --text-primary: #e6f1ff;
+    --text-secondary: #8892b0;
+    --accent-plasma: #00f6ff;
+    --glow-plasma: rgba(0, 246, 255, 0.15);
+    --spotlight-color: rgba(0, 246, 255, 0.08);
+    --font-main: 'Manrope', sans-serif;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
-    font-family: var(--font-body);
-    background-color: #000;
+    font-family: var(--font-main);
+    background-color: var(--bg-void);
     color: var(--text-primary);
-    line-height: 1.7;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
+#stardust-canvas {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+}
+
+/* Base Mobile-First Layout */
 .page-container {
+    max-width: 1400px; margin: 0 auto;
+    position: relative;
+    background-image: radial-gradient(
+        circle 500px at var(--mouse-x) var(--mouse-y),
+        var(--spotlight-color),
+        transparent
+    );
     display: flex;
-    max-width: 1400px;
-    margin: 40px auto;
-    background-color: var(--bg-dark);
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    border: 1px solid var(--border-color);
+    flex-direction: column;
 }
 
-/* Scroll-reveal animation */
-.scroll-reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.sidebar-wrapper {
+    background: var(--bg-glass);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-glass);
 }
-.scroll-reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+.sidebar { padding: 30px; }
+.main-content { padding: 30px; }
 
-/* ===== LEFT SIDEBAR ===== */
-.sidebar {
-    width: 38%;
-    background-color: var(--bg-sidebar);
-    padding: 40px 30px;
-    border-right: 1px solid var(--border-color);
-}
+/* Add these new rules to the end of your style.css file */
 
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 4px solid var(--accent-phoenix);
-    object-fit: cover;
-    margin: 0 auto 20px auto;
-    display: block;
-    filter: grayscale(30%);
-    transition: filter 0.3s;
-}
-.profile-pic:hover {
-    filter: grayscale(0%);
-}
-
-.profile-section {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.name {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #fff;
-    background: linear-gradient(90deg, #fff, #ffcc80);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.tagline {
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    color: var(--accent-phoenix);
-    margin-top: 5px;
-}
-
-#download-btn {
-    width: 100%;
-    padding: 15px;
-    background: transparent;
-    border: 1px solid var(--accent-phoenix);
-    color: var(--accent-phoenix);
-    border-radius: 5px;
+.tech-skills-list h4 {
+    color: var(--accent-plasma);
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-}
-#download-btn:hover {
-    background-color: var(--accent-phoenix);
-    color: var(--bg-dark);
-    box-shadow: 0 0 20px var(--accent-phoenix-glow);
-}
-#download-btn svg { width: 20px; height: 20px; }
-
-.sidebar-block { margin-bottom: 30px; }
-.sidebar-block h3 {
-    font-size: 1.2rem;
-    color: #fff;
-    border-bottom: 1px solid var(--accent-phoenix);
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-}
-.sidebar-block p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-    color: var(--text-primary);
-}
-.sidebar-block .icon {
-    width: 18px;
-    stroke: var(--accent-phoenix);
-    fill: none;
-    stroke-width: 2;
-    flex-shrink: 0;
-}
-.skill-category {
-    font-weight: 600;
     margin-top: 15px;
-    margin-bottom: 8px !important;
-    color: var(--text-primary);
-}
-.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.skill-tags span {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    padding: 6px 14px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    transition: all 0.3s;
-}
-.skill-tags span:hover {
-    background-color: var(--accent-phoenix);
-    color: var(--bg-dark);
-    border-color: var(--accent-phoenix);
-    transform: translateY(-2px);
+    margin-bottom: 5px;
 }
 
-/* ===== RIGHT MAIN CONTENT ===== */
-.main-content {
-    width: 62%;
-    padding: 40px;
+.tech-skills-list p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
 }
-.main-content section { margin-bottom: 40px; }
-.main-content h2 {
-    font-size: 1.8rem;
-    color: #fff;
-    margin-bottom: 25px;
+
+/* Desktop Layout (for screens > 1024px) */
+@media (min-width: 1024px) {
+    .page-container { flex-direction: row; gap: 40px; padding: 40px; }
+    .sidebar-wrapper {
+        width: 35%; flex-shrink: 0;
+        position: sticky;
+        top: 40px;
+        height: calc(100vh - 80px);
+        border: 1px solid var(--border-glass);
+        border-radius: 12px;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    .sidebar { padding: 40px; height: 100%; overflow-y: auto; }
+    .main-content { width: 65%; flex-grow: 1; padding: 0; }
+}
+
+/* Sidebar Styling */
+.profile-section { text-align: center; margin-bottom: 30px; }
+.profile-pic {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-plasma);
+    margin-bottom: 20px;
+    object-fit: cover; /* This FIXES the stretching issue */
+}
+.name { color: #fff; font-size: 2rem; font-weight: 700; }
+.tagline { color: var(--text-secondary); font-size: 1.1rem; }
+
+.sidebar-block { margin-bottom: 25px; }
+.sidebar-block h3 { color: #fff; font-size: 1.1rem; margin-bottom: 15px; }
+.sidebar-block p, .contact-link { color: var(--text-secondary); text-decoration: none; margin-bottom: 8px; transition: color 0.3s; font-size: 0.95rem; }
+.contact-link:hover { color: var(--accent-plasma); }
+
+/* Interactive Skill Icons */
+.interactive-skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 15px; }
+.skill-icon-wrap {
     position: relative;
-    padding-left: 20px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center; justify-content: center;
+    background: var(--glow-plasma);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-.main-content h2::before {
-    content: '';
+.skill-icon-wrap:hover {
+    background: var(--accent-plasma);
+    box-shadow: 0 0 20px var(--glow-plasma);
+    transform: translateY(-5px);
+}
+.skill-icon-wrap svg { width: 32px; height: 32px; stroke: var(--accent-plasma); fill: var(--accent-plasma); transition: all 0.3s ease; }
+.skill-icon-wrap:hover svg { stroke: var(--bg-void); fill: var(--bg-void); }
+.skill-icon-wrap::after {
+    content: attr(data-skill);
     position: absolute;
-    left: 0;
-    top: 5px;
-    bottom: 5px;
-    width: 5px;
-    background-color: var(--accent-phoenix);
-    border-radius: 5px;
-}
-
-/* Certifications */
-.cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.cert-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease;
-    transform-style: preserve-3d; /* For Tilt.js */
-}
-.cert-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-color: var(--accent-phoenix);
-}
-.cert-logo { height: 50px; margin-bottom: 15px; }
-.cert-logo.michigan { filter: invert(90%) sepia(20%) saturate(500%) hue-rotate(330deg); }
-.cert-card h3 { color: #fff; font-size: 1.2rem; }
-.cert-card h4 { color: var(--text-secondary); font-size: 1rem; font-weight: 400; margin-bottom: 15px; }
-.cert-card a {
-    color: var(--accent-phoenix);
-    text-decoration: none;
+    bottom: -25px;
+    background: var(--accent-plasma);
+    color: var(--bg-void);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
     font-weight: 600;
-}
-
-/* Experience Timeline */
-.timeline { position: relative; }
-.job-entry {
-    background: var(--bg-card);
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 3px solid var(--border-color);
-    margin-bottom: 25px;
+    opacity: 0;
+    transform: translateY(-10px);
     transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
 }
-.job-entry:hover {
-    border-left-color: var(--accent-phoenix);
-    transform: translateX(5px);
-}
-.job-entry h3 { color: #fff; font-size: 1.3rem; }
-.job-entry h4 { color: var(--text-primary); font-size: 1rem; font-weight: 400; }
-.job-entry h5 { color: var(--text-secondary); font-size: 0.9rem; font-style: italic; margin-bottom: 10px; }
-.job-entry ul { list-style-position: outside; padding-left: 20px; }
-.job-entry ul li { margin-bottom: 5px; }
+.skill-icon-wrap:hover::after { opacity: 1; transform: translateY(0); }
 
-/* Education */
-.edu-grid { display: grid; gap: 15px; }
-.edu-item { background: var(--bg-card); padding: 15px; border-radius: 5px; }
-.edu-item h3 { color: #fff; font-size: 1.1rem; }
-.edu-item p { color: var(--text-secondary); }
+#download-btn {
+    width: 100%; margin-top: 30px; padding: 15px;
+    background: transparent; border: 1px solid var(--accent-plasma);
+    color: var(--accent-plasma); border-radius: 8px; font-size: 1rem;
+    font-weight: 600; cursor: pointer; transition: all 0.3s ease;
+}
+#download-btn:hover { background: var(--glow-plasma); box-shadow: 0 0 20px var(--glow-plasma); }
 
-/* Responsive */
-@media (max-width: 1200px) {
-    .page-container { flex-direction: column; margin: 0; border: none; }
-    .sidebar, .main-content { width: 100%; }
-    .sidebar { border-right: none; border-bottom: 1px solid var(--border-color); }
+/* Main Content Styling */
+section { margin-bottom: 50px; }
+h2 { color: #fff; font-size: 1.8rem; font-weight: 700; margin-bottom: 25px; }
+
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+@media (min-width: 600px) { .card-grid { grid-template-columns: 1fr 1fr; } }
+
+.cert-card, .edu-item {
+    background: var(--bg-glass); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glass); border-radius: 8px;
+    padding: 20px; display: flex; align-items: center; gap: 15px;
+    transition: all 0.3s ease;
+    animation: float 6s ease-in-out infinite;
 }
-@media (max-width: 768px) {
-    .cert-grid { grid-template-columns: 1fr; }
-    .sidebar, .main-content { padding: 25px; }
-    .name { font-size: 1.8rem; }
+.cert-card:hover, .edu-item:hover { transform: translateY(-5px); background: rgba(10, 25, 47, 0.8); border-color: var(--accent-plasma); }
+.cert-card:nth-child(2n), .edu-item:nth-child(2n) { animation-delay: -3s; }
+
+.cert-card img, .edu-item img { height: 40px; width: 40px; object-fit: contain; flex-shrink: 0; }
+.cert-card .michigan-logo { filter: invert(90%) sepia(20%) saturate(500%) hue-rotate(150deg); }
+.cert-card h3, .edu-item h3 { color: #fff; font-size: 1.1rem; margin-bottom: 3px; }
+.cert-card a, .edu-item p { color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.95rem;}
+.cert-card a:hover { text-decoration: underline; color: var(--accent-plasma); }
+
+/* Timeline & Job Entry Styling with Logos */
+.timeline { display: flex; flex-direction: column; gap: 15px; }
+.job-entry {
+    background: var(--bg-glass); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glass); border-radius: 8px;
+    padding: 20px; transition: all 0.3s ease;
+    animation: float 8s ease-in-out infinite;
 }
+.job-entry:nth-child(odd) { animation-delay: -2s; }
+.job-entry:nth-child(even) { animation-delay: -6s; }
+.job-entry:hover { transform: translateY(-5px); background: rgba(10, 25, 47, 0.8); border-color: var(--accent-plasma); }
+
+.job-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+.employer-logo {
+    width: 40px; height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: grayscale(100%) contrast(0) brightness(1.8); /* Makes logos a uniform white */
+}
+.job-title-group h3 { color: #fff; font-size: 1.2rem; }
+.job-title-group h4 { color: var(--text-secondary); font-size: 0.9rem; font-weight: 400; }
+.job-entry p { margin: 0; }
+
+@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
 
 /* Print Styles */
 @media print {
-    body { background-color: #fff; color: #000; }
-    .page-container { margin: 0; box-shadow: none; border: none; display: block; }
-    .sidebar { width: 35%; float: left; background-color: #f5f5f5; color: #000; border-right: 1px solid #ccc; }
-    .main-content { width: 65%; float: left; color: #000; }
-    .sidebar, .main-content { padding: 20px; }
-    .name, h2, h3 { color: #000 !important; background: none !important; -webkit-text-fill-color: initial !important; }
-    #download-btn, .cert-card a, .scroll-reveal { display: none !important; }
-    .cert-card, .job-entry, .edu-item { background: #fafafa; border: 1px solid #eee; }
-    .skill-tags span { background: #eee; color: #000; }
-    .cert-logo.michigan { filter: none; }
-    a { text-decoration: none; color: #000; }
+    body, #stardust-canvas { background: #fff !important; }
+    .page-container { display: block; background: none; }
+    .sidebar-wrapper { width: 30%; float: left; background: #f5f5f5; -webkit-backdrop-filter: none; backdrop-filter: none; }
+    .main-content { width: 70%; float: left; }
+    h1, h2, h3, h4, p, a, span { color: #000 !important; }
+    .cert-card, .job-entry, .edu-item { background: #fafafa; border: 1px solid #eee; -webkit-backdrop-filter: none; backdrop-filter: none; }
+    #download-btn, .skill-icon-wrap, .employer-logo, .cert-card img, .edu-item img { display: none; }
 }
