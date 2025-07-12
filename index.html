@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josekutty Cheriyan | Digital Executive Profile</title>
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Print-only Stylesheet for PDF Generation -->
+    <link rel="stylesheet" href="print-styles.css" media="print">
+
+    <!-- Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/26bad52fa4.js" crossorigin="anonymous"></script>
     
     <!-- Favicon -->
@@ -22,56 +28,50 @@
 
     <div class="page-container" id="resume-to-download">
         <!-- ===== LEFT SIDEBAR ===== -->
-        <!-- ===== LEFT SIDEBAR ===== -->
         <div class="sidebar-wrapper">
             <aside class="sidebar">
                 <div class="sidebar-content">
                     <div class="profile-section">
                         <img src="profile.jpeg" alt="Josekutty Cheriyan" class="profile-pic">
-                        <h1 class="name">JC</h1>
-                        <p class="full-name">Josekutty Cheriyan</p>
+                        <div class="name-block">
+                            <h1 class="name-initials">JC</h1>
+                            <p class="full-name">Josekutty Cheriyan</p>
+                        </div>
                         <p class="tagline">Technology • Strategy • Leadership</p>
                     </div>
 
                     <div class="sidebar-block">
                         <h3>Contact</h3>
-                        <a class="contact-link" href="mailto:josekutty01@gmail.com">josekutty01@gmail.com</a>
-                        <a class="contact-link" href="tel:+19402188709">+1 (940) 218-8709</a>
-                        <p>Denton, TX 76209</p>
+                        <a class="contact-link" href="mailto:josekutty01@gmail.com"><i class="fa-solid fa-envelope fa-fw"></i>josekutty01@gmail.com</a>
+                        <a class="contact-link" href="tel:+19402188709"><i class="fa-solid fa-phone fa-fw"></i>+1 (940) 218-8709</a>
+                        <p><i class="fa-solid fa-location-dot fa-fw"></i>Denton, TX 76209</p>
                     </div>
                     
                     <div class="sidebar-block">
                          <h3>Core Skills</h3>
                          <div class="interactive-skills-grid">
-                            <!-- Technical Skills -->
-                            <div class="skill-icon-wrap" data-skill="Cybersecurity"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Python"><svg viewBox="0 0 24 24"><path d="M13.26 16.26l-1.41 1.41L7.71 13.5l4.14-4.14L13.26 10.5l-2.72 2.72 2.72 3.04zM16.26 7.74l1.41-1.41L21.81 10.5l-4.14 4.14-1.41-1.41L19 10.5l-2.74-2.76z M10.5 19.81l-4.14-4.14L7.77 14.26l2.73 2.73-3.04 2.72zm-2.76-13.07l-1.41 1.41L2.19 13.5l4.14 4.14 1.41-1.41L4.97 13.5l2.77-2.76z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="SQL/Databases"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8s8 3.58 8 8v1c-2.55 0-4.73.88-6.42 2.34C9.27 14.47 8 12.83 8 11c0-1.48 1.4-2.72 3.2-3l-2.13-2.13C6.44 6.75 4 9.17 4 12zm8 8c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Leadership"><svg viewBox="0 0 24 24"><path d="M16.5 12c1.38 0 2.5-1.12 2.5-2.5S17.88 7 16.5 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 3-1.34 3-3S10.66 5 9 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Financial Acumen"><svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Logistics"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm13.5-8.5l1.96 2.5H17V9.5h2.5zM18 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Problem-Solving"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 4a2 2 0 110 4 2 2 0 010-4zm0 14c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.3-.84-2.4-2-2.82V10h-2v2.18c1.16.41 2 1.51 2 2.82 0 1.66-1.34 3-3 3z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Communication"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Adaptability"><svg viewBox="0 0 24 24"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"></path></svg></div>
-                            <div class="skill-icon-wrap" data-skill="Strategic Thinking"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></svg></div>
+                            <div class="skill-icon-wrap" data-skill="Cybersecurity"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Python"><i class="fa-brands fa-python"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Leadership"><i class="fa-solid fa-users"></i></div>
+                            <div class="skill-icon-wrap" data-skill="SQL/Databases"><i class="fa-solid fa-database"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Financial Acumen"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Logistics"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Problem-Solving"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Communication"><i class="fa-solid fa-comments"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Adaptability"><i class="fa-solid fa-arrows-rotate"></i></div>
+                            <div class="skill-icon-wrap" data-skill="Strategic Thinking"><i class="fa-solid fa-chess-knight"></i></div>
                          </div>
                     </div>
                     
-                    <!-- NEWLY ADDED TECHNICAL SKILLS SECTION -->
                     <div class="sidebar-block">
                         <h3>Technical Proficiencies</h3>
                         <div class="tech-skills-list">
-                            <h4>Cybersecurity</h4>
-                            <p>SIEM Tools, IDS, Network Security, Vulnerability Assessment, Risk Management, Threat Mitigation</p>
-                            <h4>Python & Web Development</h4>
-                            <p>Python, Django, Flask, JavaScript, HTML5, CSS3, REST APIs, Git</p>
-                            <h4>Databases & Cloud</h4>
-                            <p>SQL, MySQL, MS SQL Server, AWS (Foundational)</p>
-                            <h4>Design Software</h4>
-                            <p>Adobe Photoshop, Adobe Illustrator, CorelDraw</p>
+                            <h4>Cybersecurity</h4><p>SIEM Tools, IDS, Network Security, Vulnerability Assessment, Risk Management, Threat Mitigation</p>
+                            <h4>Python & Web Development</h4><p>Python, Django, Flask, JavaScript, HTML5, CSS3, REST APIs, Git</p>
+                            <h4>Databases & Cloud</h4><p>SQL, MySQL, MS SQL Server, AWS (Foundational)</p>
+                            <h4>Design Software</h4><p>Adobe Photoshop, Adobe Illustrator, CorelDraw</p>
                         </div>
                     </div>
-                    <!-- END OF NEW SECTION -->
 
                     <div class="sidebar-block">
                         <h3>Licenses & Credentials</h3>
@@ -80,7 +80,13 @@
                         <p><strong>Retail</strong>: Food Handler (Manager), Alcohol & Tobacco Seller</p>
                     </div>
                     
-                    <button id="download-btn">Download PDF Brief</button>
+                    <div class="socials-and-download">
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" target="_blank" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <button id="download-btn">Download PDF</button>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -95,107 +101,56 @@
             <section>
                 <h2>Professional Certifications</h2>
                 <div class="card-grid">
-                    <div class="cert-card" data-tilt>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo">
-                        <div>
-                            <h3>Google Cybersecurity</h3>
-                            <a href="https://coursera.org/verify/professional-cert/G6LK9NTLRPX2" target="_blank">Verify Credential</a>
-                        </div>
-                    </div>
-                    <div class="cert-card" data-tilt>
-                        <img src="um.png" alt="University of Michigan Logo" class="michigan-logo">
-                         <div>
-                            <h3>Python for Everybody</h3>
-                            <a href="https://coursera.org/verify/specialization/QV6DKU2GFDLY" target="_blank">Verify Credential</a>
-                        </div>
-                    </div>
+                    <div class="cert-card" data-tilt><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo"><div><h3>Google Cybersecurity</h3><a href="https://coursera.org/verify/professional-cert/G6LK9NTLRPX2" target="_blank">Verify Credential</a></div></div>
+                    <div class="cert-card" data-tilt><img src="um.png" alt="University of Michigan Logo" class="michigan-logo"><div><h3>Python for Everybody</h3><a href="https://coursera.org/verify/specialization/QV6DKU2GFDLY" target="_blank">Verify Credential</a></div></div>
                 </div>
             </section>
 
             <section>
                 <h2>Professional Experience</h2>
                 <div class="timeline">
-                    <!-- Tech & Management Experience First -->
-                    <div class="job-entry">
-                        <div class="job-header">
-                            <i class="fa-brands fa-python"></i>
-                            <div class="job-title-group">
-                                <h3>Python Developer (Hybrid)</h3>
-                                <h4>Tettares | Bangalore, India | 2013 - 2015</h4>
-                            </div>
-                        </div>
-                        <p>Architected full-stack modules on Django, engineered RESTful services with Flask, and automated a CI/CD pipeline, demonstrating expertise in MVT/MVC design and DevOps principles.</p>
-                    </div>
-
-                    <div class="job-entry">
-                        <div class="job-header">
-                            <i class="fa-solid fa-shop-lock"></i>
-                             <div class="job-title-group">
-                                <h3>Store Manager</h3>
-                                <h4>7-Eleven | Denton, TX | 2018 - 2021</h4>
-                            </div>
-                        </div>
-                        <p>Commanded all store operations, holding full P&L responsibility, managing staff lifecycle, and driving sales growth through targeted marketing and stringent loss prevention protocols.</p>
-                    </div>
-
-                    <div class="job-entry">
-                         <div class="job-header">
-                             <i class="fa-solid fa-people-roof"></i>
-                            <div class="job-title-group">
-                                <h3>Marketing Manager</h3>
-                                <h4>ColorBar Events | Bangalore, India | 2012 - 2013</h4>
-                            </div>
-                        </div>
-                        <p>Led data-driven market research and coordinated creative teams to develop and launch campaigns that significantly increased brand exposure and market penetration.</p>
-                    </div>
-                    
-                    <div class="job-entry">
-                         <div class="job-header">
-                             <i class="fa-solid fa-bus"></i>
-                            <div class="job-title-group">
-                                <h3>School Bus / Public Transit Driver</h3>
-                                <h4>National Express, DCTA, Denton ISD | 2017 - Present</h4>
-                            </div>
-                        </div>
-                        <p>Entrusted with ensuring the safe, reliable, and timely transport of passengers, requiring strict adherence to federal/state safety protocols and precise logistical scheduling.</p>
-                    </div>
-
-                    <div class="job-entry">
-                        <div class="job-header">
-                            <i class="fa-solid fa-palette"></i>
-                             <div class="job-title-group">
-                                <h3>Jr. Graphic Designer</h3>
-                                <h4>Eblits Inc | Bangalore, India | 2008 - 2009</h4>
-                            </div>
-                        </div>
-                        <p>Translated high-level project requirements into compelling visual assets, producing logos, banners, and UI components from initial concept to final launch.</p>
-                    </div>
+                    <div class="job-entry"><div class="job-header"><span class="employer-icon" role="img" aria-label="Tettares"><i class="fa-solid fa-code"></i></span><div class="job-title-group"><h3>Python Developer (Hybrid)</h3><h4>Tettares | Bangalore, India | 2013 - 2015</h4></div></div><p>Architected full-stack modules on Django, engineered RESTful services with Flask, and automated a CI/CD pipeline, demonstrating expertise in MVT/MVC design and DevOps principles.</p></div>
+                    <div class="job-entry"><div class="job-header"><span class="employer-icon" role="img" aria-label="7-Eleven"><i class="fa-solid fa-shop"></i></span><div class="job-title-group"><h3>Store Manager</h3><h4>7-Eleven | Denton, TX | 2018 - 2021</h4></div></div><p>Commanded all store operations, holding full P&L responsibility, managing staff lifecycle, and driving sales growth through targeted marketing and stringent loss prevention protocols.</p></div>
+                    <div class="job-entry"><div class="job-header"><span class="employer-icon" role="img" aria-label="ColorBar Events"><i class="fa-solid fa-bullhorn"></i></span><div class="job-title-group"><h3>Marketing Manager</h3><h4>ColorBar Events | Bangalore, India | 2012 - 2013</h4></div></div><p>Led data-driven market research and coordinated creative teams to develop and launch campaigns that significantly increased brand exposure and market penetration.</p></div>
+                    <div class="job-entry"><div class="job-header"><span class="employer-icon" role="img" aria-label="Transportation"><i class="fa-solid fa-bus"></i></span><div class="job-title-group"><h3>School Bus / Public Transit Driver</h3><h4>National Express, DCTA, Denton ISD | 2017 - Present</h4></div></div><p>Entrusted with ensuring the safe, reliable, and timely transport of passengers, requiring strict adherence to federal/state safety protocols and precise logistical scheduling.</p></div>
+                    <div class="job-entry"><div class="job-header"><span class="employer-icon" role="img" aria-label="Eblits Inc"><i class="fa-solid fa-palette"></i></span><div class="job-title-group"><h3>Jr. Graphic Designer</h3><h4>Eblits Inc | Bangalore, India | 2008 - 2009</h4></div></div><p>Translated high-level project requirements into compelling visual assets, producing logos, banners, and UI components from initial concept to final launch.</p></div>
                 </div>
             </section>
             
             <section>
                 <h2>Education</h2>
                 <div class="card-grid">
-                    <div class="edu-item">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <div>
-                            <h3>Associate Degree, Business & Hospitality</h3>
-                            <p>Nanyang Institute of Management</p>
-                        </div>
-                    </div>
-                    <div class="edu-item">
-                        <i class="fa-solid fa-school-flag"></i>
-                        <div>
-                            <h3>Bachelor of Science, Computer Science</h3>
-                            <p>Manipal University</p>
-                        </div>
-                    </div>
+                    <div class="edu-item"><span class="employer-icon" role="img" aria-label="Nanyang Institute"><i class="fa-solid fa-building-columns"></i></span><div><h3>Associate Degree, Business & Hospitality</h3><p>Nanyang Institute of Management</p></div></div>
+                    <div class="edu-item"><span class="employer-icon" role="img" aria-label="Manipal University"><i class="fa-solid fa-school-flag"></i></span><div><h3>Bachelor of Science, Computer Science</h3><p>Manipal University</p></div></div>
                 </div>
             </section>
+
+            <!-- NEWLY ADDED TECH TOOLKIT SECTION -->
+            <section class="tech-toolkit-section">
+                <h2>Tech Toolkit</h2>
+                <div class="tech-logo-grid">
+                    <!-- IMPORTANT: Replace the src="..." with the path to your own PNG images -->
+                    <div class="tech-logo" data-tech="Python"><img src="python-logo.png" alt="Python"></div>
+                    <div class="tech-logo" data-tech="Django"><img src="django-logo.png" alt="Django"></div>
+                    <div class="tech-logo" data-tech="Flask"><img src="flask-logo.png" alt="Flask"></div>
+                    <div class="tech-logo" data-tech="JavaScript"><img src="js-logo.png" alt="JavaScript"></div>
+                    <div class="tech-logo" data-tech="Linux"><img src="linux-logo.png" alt="Linux"></div>
+                    <div class="tech-logo" data-tech="SQL"><img src="sql-logo.png" alt="SQL"></div>
+                    <div class="tech-logo" data-tech="Git"><img src="git-logo.png" alt="Git"></div>
+                    <div class="tech-logo" data-tech="AWS"><img src="aws-logo.png" alt="AWS"></div>
+                </div>
+            </section>
+            <!-- END OF NEW SECTION -->
+
         </main>
     </div>
     
-    <!-- Libraries -->
+    <!-- NEWLY ADDED FOOTER -->
+    <footer class="main-footer">
+        <p>© 2025 Josekutty Cheriyan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>

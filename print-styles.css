@@ -1,0 +1,69 @@
+/* This stylesheet is ONLY applied during PDF generation */
+body.print-mode {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+body.print-mode #stardust-canvas {
+    display: none !important;
+}
+
+body.print-mode .page-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none !important;
+    display: block !important;
+}
+
+body.print-mode .sidebar-wrapper {
+    width: 30% !important;
+    float: left;
+    height: auto !important;
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 20px;
+    border-radius: 0 !important;
+}
+
+body.print-mode .main-content {
+    width: 70% !important;
+    float: left;
+    padding: 20px !important;
+}
+
+body.print-mode h1, body.print-mode h2, body.print-mode h3, body.print-mode h4, body.print-mode p, body.print-mode a, body.print-mode span, body.print-mode div, body.print-mode li {
+    color: #000 !important;
+    background: none !important;
+}
+
+body.print-mode .name-initials { font-size: 2rem; }
+body.print-mode .full-name { font-size: 1.2rem; }
+body.print-mode .tagline { color: #555 !important; }
+
+body.print-mode .cert-card, body.print-mode .job-entry, body.print-mode .edu-item {
+    background: #f9f9f9 !important;
+    border: 1px solid #eee !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    animation: none !important;
+}
+
+body.print-mode #download-btn, 
+body.print-mode .skill-icon-wrap, 
+body.print-mode .employer-icon, 
+body.print-mode .cert-card img, 
+body.print-mode .social-links,
+body.print-mode .michigan-logo {
+    display: none !important;
+}
+
+body.print-mode .job-header {
+    margin-bottom: 8px;
+}
+
+body.print-mode a {
+    text-decoration: none;
+}
