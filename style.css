@@ -1,88 +1,263 @@
+/* --- Global Styles & "Phoenix" Theme --- */
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1E1E1E;
+    --bg-sidebar: #0D0D0D;
+    --text-primary: #E0E0E0;
+    --text-secondary: #A0A0A0;
+    --accent-phoenix: #FF8C00; /* Vibrant Orange */
+    --accent-phoenix-glow: rgba(255, 140, 0, 0.3);
+    --border-color: #2a2a2a;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: #1a1a2e;
-    color: #e0e0e0;
-    font-family: 'Rajdhani', sans-serif; /* A sleek, modern font. [4] */
+    font-family: var(--font-body);
+    background-color: #000;
+    color: var(--text-primary);
+    line-height: 1.7;
 }
 
-.futuristic-card {
-    background: #1f1f3a;
-    border: 1px solid #0d7377;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(13, 115, 119, 0.5);
+.page-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 40px auto;
+    background-color: var(--bg-dark);
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border: 1px solid var(--border-color);
 }
 
-.card-header {
-    background: #162447;
-    border-bottom: 1px solid #0d7377;
-    padding: 2rem;
+/* Scroll-reveal animation */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.card-header h1 {
-    font-family: 'Orbitron', sans-serif; /* A distinctly futuristic font. [4] */
-    color: #e0e0e0;
-    font-size: 3rem;
-    text-shadow: 0 0 10px #0d7377;
+/* ===== LEFT SIDEBAR ===== */
+.sidebar {
+    width: 38%;
+    background-color: var(--bg-sidebar);
+    padding: 40px 30px;
+    border-right: 1px solid var(--border-color);
 }
 
-.card-header .lead {
-    color: #b3b3b3;
-    font-size: 1.1rem;
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-phoenix);
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    display: block;
+    filter: grayscale(30%);
+    transition: filter 0.3s;
+}
+.profile-pic:hover {
+    filter: grayscale(0%);
 }
 
-.card-header i {
-    color: #32e0c4;
-    margin-right: 8px;
-}
-
-.section-title {
-    font-family: 'Orbitron', sans-serif; /* A distinctly futuristic font. [4] */
-    color: #32e0c4;
-    border-bottom: 2px solid #32e0c4;
-    padding-bottom: 10px;
+.profile-section {
+    text-align: center;
     margin-bottom: 30px;
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
+}
+.name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #fff, #ffcc80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tagline {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--accent-phoenix);
+    margin-top: 5px;
 }
 
-.section-title i {
-    margin-right: 15px;
-    font-size: 1.5rem;
-}
-
-.job h3, .education-item h3 {
-    color: #e0e0e0;
-    font-family: 'Rajdhani', sans-serif; /* A sleek, modern font. [4] */
+#download-btn {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid var(--accent-phoenix);
+    color: var(--accent-phoenix);
+    border-radius: 5px;
+    font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+#download-btn:hover {
+    background-color: var(--accent-phoenix);
+    color: var(--bg-dark);
+    box-shadow: 0 0 20px var(--accent-phoenix-glow);
+}
+#download-btn svg { width: 20px; height: 20px; }
+
+.sidebar-block { margin-bottom: 30px; }
+.sidebar-block h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: 1px solid var(--accent-phoenix);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.sidebar-block p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+.sidebar-block .icon {
+    width: 18px;
+    stroke: var(--accent-phoenix);
+    fill: none;
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+.skill-category {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 8px !important;
+    color: var(--text-primary);
+}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tags span {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+.skill-tags span:hover {
+    background-color: var(--accent-phoenix);
+    color: var(--bg-dark);
+    border-color: var(--accent-phoenix);
+    transform: translateY(-2px);
 }
 
-.job h3 i, .education-item h3 i {
-    color: #32e0c4;
-    margin-right: 10px;
+/* ===== RIGHT MAIN CONTENT ===== */
+.main-content {
+    width: 62%;
+    padding: 40px;
 }
-
-.company-name, .institution-name {
-    color: #b3b3b3;
-    font-weight: bold;
-}
-
-.date {
-    color: #888;
-    font-style: italic;
-}
-
-ul {
+.main-content section { margin-bottom: 40px; }
+.main-content h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
     padding-left: 20px;
 }
-
-li {
-    margin-bottom: 10px;
-    line-height: 1.6;
+.main-content h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 5px;
+    background-color: var(--accent-phoenix);
+    border-radius: 5px;
 }
 
-.skills .fas {
-    color: #32e0c4;
-    margin-right: 10px;
+/* Certifications */
+.cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d; /* For Tilt.js */
+}
+.cert-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-color: var(--accent-phoenix);
+}
+.cert-logo { height: 50px; margin-bottom: 15px; }
+.cert-logo.michigan { filter: invert(90%) sepia(20%) saturate(500%) hue-rotate(330deg); }
+.cert-card h3 { color: #fff; font-size: 1.2rem; }
+.cert-card h4 { color: var(--text-secondary); font-size: 1rem; font-weight: 400; margin-bottom: 15px; }
+.cert-card a {
+    color: var(--accent-phoenix);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Experience Timeline */
+.timeline { position: relative; }
+.job-entry {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid var(--border-color);
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+.job-entry:hover {
+    border-left-color: var(--accent-phoenix);
+    transform: translateX(5px);
+}
+.job-entry h3 { color: #fff; font-size: 1.3rem; }
+.job-entry h4 { color: var(--text-primary); font-size: 1rem; font-weight: 400; }
+.job-entry h5 { color: var(--text-secondary); font-size: 0.9rem; font-style: italic; margin-bottom: 10px; }
+.job-entry ul { list-style-position: outside; padding-left: 20px; }
+.job-entry ul li { margin-bottom: 5px; }
+
+/* Education */
+.edu-grid { display: grid; gap: 15px; }
+.edu-item { background: var(--bg-card); padding: 15px; border-radius: 5px; }
+.edu-item h3 { color: #fff; font-size: 1.1rem; }
+.edu-item p { color: var(--text-secondary); }
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .page-container { flex-direction: column; margin: 0; border: none; }
+    .sidebar, .main-content { width: 100%; }
+    .sidebar { border-right: none; border-bottom: 1px solid var(--border-color); }
+}
+@media (max-width: 768px) {
+    .cert-grid { grid-template-columns: 1fr; }
+    .sidebar, .main-content { padding: 25px; }
+    .name { font-size: 1.8rem; }
+}
+
+/* Print Styles */
+@media print {
+    body { background-color: #fff; color: #000; }
+    .page-container { margin: 0; box-shadow: none; border: none; display: block; }
+    .sidebar { width: 35%; float: left; background-color: #f5f5f5; color: #000; border-right: 1px solid #ccc; }
+    .main-content { width: 65%; float: left; color: #000; }
+    .sidebar, .main-content { padding: 20px; }
+    .name, h2, h3 { color: #000 !important; background: none !important; -webkit-text-fill-color: initial !important; }
+    #download-btn, .cert-card a, .scroll-reveal { display: none !important; }
+    .cert-card, .job-entry, .edu-item { background: #fafafa; border: 1px solid #eee; }
+    .skill-tags span { background: #eee; color: #000; }
+    .cert-logo.michigan { filter: none; }
+    a { text-decoration: none; color: #000; }
 }
