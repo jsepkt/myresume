@@ -1,209 +1,72 @@
 Josekutty Cheriyan
-+1 (940) 218-8709
-josekutty01@gmail.com
-Denton, TX 76209
-Summary
-Dedicated and adaptable professional with experience in customer service, team leadership, and transportation. Proven ability to manage operations efficiently while ensuring safety and compliance. Strong educational background in business administration and computer science. Fluent in
-Malayalam and English.
-Work experience
-School Bus Driver
-National Express - Aubrey, TX
-November 2024 to Present
-Delivery Driver
-Self Employed - Denton, TX
-March 2022 to September 2023
-Order Pickup: Arrive at the restaurant or store on time to pick up orders, ensuring they are correct and securely packaged.
-Navigation: Use GPS and navigation apps to efficiently find the best routes to deliver orders to customers.
-Timeliness: Deliver orders with the expected time frame to ensure customer satisfaction.
-Customer Interaction: Communicate politely with customers upon deliver, following any specific instructions they may have provided.
-Problem Solving: handle any issues that arise during the delivery process, such as incorrect orders, contact issues, or navigating unforeseen obstacles.
-Payment Management: Process payments if necessary and ensure you’re aware of any applicable tips.
-Vehicle Maintenance: Keep your vehicle clean and well maintained to ensure safety and reliability.
-Adherence to Policies: Follow Door Dash guidelines and local regulations, including traffic laws and health products.
-Schedule Management: Manage your own schedule to maximize delivery opportunities and earnings.
-Store Manager
-7-Eleven - Denton, TX
-November 2018 to April 2021
-Staff Management: Hiring, training and supervising employees, ensuring they follow company policies and deliver excellent customer service.
-Inventory Control: Managing stocks, ordering products, and ensuring that the store is well-stocked and organized.
-Financial Management: Overseeing daily sales, managing cash flow, and preparing financial reports to meet budgetary goals.
-Customer Service: Addressing customer complaints and ensuring a positive shopping experience.
-Sales Strategy: Implementing marketing initiative and promotions to drive sales and attract customers.
-Store Operations: Ensuring compliance with health, safety, and company regulations, and maintaining store cleanliness and organization.
-Loss Prevention: Monitoring security measures and addressing any theft or inventory discrepancies.
-Community Engagement: Building relationships with local organization and participating in community events to enhance store visibility.
-Bus Driver
-DCTA - Denton, TX
-January 2018 to May 2018
-Operations
-School Bus Driver
-Denton ISD Transportation - Denton, TX
-August 2017 to December 2017
-Safe Transportation: Ensure the safe transport of students to and from school and various events, adhering to all traffic and safety regulations.
-Pre-Trip Inspections: Conduct regular inspections of the bus before each route, checking for mechanical issues, safety equipment, and cleanliness.
-Student Management: Supervise students during transit, promoting a safe and respectful environment. Address any behaviour issues appropriately.
-Communication: Maintain communication with school officials and parents regarding schedules, delays, or emergencies.
-Emergency Procedures: Be prepared to handle emergencies, including accidents, medical situations, or unexpected changes in routes.
-Record Keeping: Maintain accurate records of routes, student attendance, and any incidents that occur during transportation.
-Training and Compliance: Participate in required training sessions and stay updated on district policies, state regulations, and safety protocols.
-Direct Support Professional Staff (DSP I)
-Denton State Living Supported Centre - Denton, TX
-March 2016 to December 2016
-Personal Care: Assist clients with daily living activities, including bathing, dressing, grooming, and meal preparation.
-Support and Encouragement: Foster independence by helping clients set and achieve personal goals.
-Social Interaction: Facilitate social activities and community integration to enhance social skills and connections.
-Health Monitoring: Observe and report any changes in clients physical or mental health to supervisors or healthcare professionals.
-Documentation: Maintain accurate records of client progress, incidents, and daily activities.
-Advocacy: Serve as an advocate for clients, ensuring their rights and preferences are respected.
-Custodian
-Sodexo - Lewisville, TX
-December 2015 to February 2016
-Cleaning and Maintenance
-Sweep, mop, vacuum, and scrub floors.
-Dust and wipe surfaces, including furniture and fixtures.
-Clean windows, restrooms, and communal areas.
-Waste Management
-Empty trash bins and replace liners.
-Dispose of waste in accordance with health and safety regulations.
-Inventory Management
-Monitor and restock cleaning supplies and equipment.
-Report any maintenance or repair needs.
-Safety Protocols
-Follow safety guidelines and procedures to ensure a safe working environment.
-Use appropriate cleaning chemicals and equipment safely.
-Basic repairs
-Perform minor repairs, such as changing light bulbs or fixing leaks.
-Notify management of any significant issues requiring professional attention.
-Event Support
-Assist with setup and cleanup for events and meetings.
-Ensure facilities are ready for use by staff and visitors.
-Communication
-Collaborate with other staff members to address facility needs.
-Provide excellent customer service to building occupants and visitors.
-Python Developer (Hybrid)
-Tettares - Madiwala, Bangalore, Karnataka 560068, India
-January 2013 to October 2015
-Participated in requirement gathering and worked closely with the architect in designing and modelling.
-Developed entire frontend and backend modules using Python on
-Django Web Framework.
-Developing a Restful service using Python Flask framework.
-Using GITLAB as the main source code repository.
-Good experience in developing web applications implementing
-MVT/MVC architecture using Django, Flask, Webapp2 and spring web application frameworks.
-Experienced in web applications development using Django/Python,
-Flask/Python and Node.js, Angular.js, DOJO, jQuery while using
-HTML/CSS/JS for server-side rendered applications.
-Experienced in web applications development using Django/Python,.NET/C#, Flask/Python, and Node.js, Angular.js, ember.js, jQuery,
-Ajax while using HTML/CSS/JS for server-side rendered applications.
-Used PyQt for the functionality filtering of columns helping customers to effectively view their transactions and statements.
-Implemented navigation rules for the application and page.
-Used Python and Django to interface with the jQuery UI and manage the storage and deletion of content.
-Developed a fully automated continuous integration system using Git,
-Jenkins, MySQL and custom tools developed in Python and Bash.
-Rewrite existing Java application in Python module to deliver a certain format of data.
-Wrote Python scripts to parse XML documents and load the data in the database.
-Generated property list for every application dynamically using
-Python.
-Also used Bootstrap and Angular.js as a mechanism to manage and organize the HTML page layout.
-Responsible for search engine optimization to improve the visibility of the website.
-Handled all the client-side validation using JavaScript.
-Designed and developed data management system using MySQL.
-Created a Git repository and added the project to GitHub.
-Build a development environment with JIRA.
-Responsible for debugging and troubleshooting the web application.
-Environment: Python, Django, Flask, Java, Angular.js, Bootstrap,
-Bash, PyQt, XML, Shell Scripting, MySQL, HTML, XHTML, CSS, AJAX,
-JavaScript, Jenkins, Apache Web Server, Linux.
-Marketing Manager
-ColorBar Events - No.1625/4, Devaiah Park Road, Devaiah Park, Bangalore 560021, India
-January 2012 to December 2013
-Manage and coordinate marketing and creative staff.
-Lead market research efforts to uncover the viability of current and exciting products or services.
-Collaborate with media organizations and advertising agencies.
-Brainstorm ideas for ne campaigns.
-Coordinate with the sales team and other departments to produce effective strategies.
-Monitor current campaigns, ensuring their staff meets deadlines and complete necessary tasks.
-Analyse data to evaluate the success of their marketing efforts and come up with new ideas to improve brand marketing and exposure.
-Jr. Graphic Designer
-Eblits Inc - 6 th Cross, 7 th Main Rd, S.T Bed, 4 th Block, Koramangala, Bangalore, Karnataka 560034, India
-June 2008 to December 2009
-Understanding project requirements and ideas.
-Using graphic techniques to create drafts.
-Producing logos, banners, and interfaces.
-Pitching creative concepts.
-Collaborating with the team to launch projects.
-Using feedback from other designers to improve.
-Education
-Associate Degree in Business Administration and Hospitality Management
-Nanyang Institute of Management Studies - 28 N Canal Rd Poh Heng
-January 2010 to December 2012
-Bachelor of Science (B.S) in Computer and Information Science
-Manipal University - Remote
-January 2008 to December 2011
-Diploma in Hospitality and Business Education
-Frankfinn Institute of Hospitality - Cochin, Kerala
-January 2009 to December 2010
-GED in Applied Mathematics with Science
-Mary Queens Higher Secondary School - Kannur, Kerala
-June 2006 to March 2008
-Commercial driver's licenses
-Class B
-State: TX
-Endorsements
-P (Passenger vehicles), S (School bus)
-Skills
-Cash Handling - 5 years
-Agile - 3 years
-Basic Medical Knowledge - 6 years
-HTML - 6 years
-Adobe photoshop - 8 years
-Leadership - 5 years
-Customer Service - 5 years
-Training and Development - 3 years
-Loss Prevention - 5 years
-Microsoft SQL Server - 3 years
-Behaviour Management - 3 years
-Financial Acumen - 5 years
-Coral Draw - 2 years
-HTML5 - 8 years
-Bootstrap
-Empathy and Compassion
-MySQL - 3 years
-Teamwork
-Problem Solving Skills
-Communication Skills
-Physical Stamina
-Inventory Management - 5 years
-Personal Care Skills
-DTP - 10+ years
-Python - 3 years
-Git - 2 years
-Sales Skill
-Inventory control - 5 years
-Patience and Calmness
-JavaScript - 3 years
-Time Management
-Java - 3 years
-Safety Awareness
-Compliance Knowledge
-Adobe Illustrator - 3 years
-CSS - 10+ years
-Web Services
-First Aid Knowledge
-Payroll
-Computer Science
-Attend to Detail
-Cultural Competency
-AWS
-Management
-Retail Sales
-Do you want to add any of these skills?
-Do you want to add any of these skills?
-Certifications & licenses
-Student Pilot License
-February 2023 to Present
-XII
-Driver's License
-Passenger Endorsement
-School Bus Endorsement
-Food Handler Certification
++1 (940) 218-8709 | josekutty01@gmail.com
+1004 Meadow Hill St, Denton, Texas, 76209 USA
+LinkedIn: linkedin.com/in/josekutty-cheriyan-66177061 | GitHub: github.com/jsepkt
+
+BUILDING THE DECENTRALIZED FUTURE
+I don't just write code; I architect resilience.
+As a Senior Blockchain Architect and Systems Engineer, I operate at the bleeding edge of what's possible in decentralized technology. From engineering censorship-resistant operating systems (Prism OS) to optimizing high-frequency blockchain nodes (Citadel), my work defines the next generation of the internet. If you are solving the hardest problems in Web3, P2P networking, or high-concurrency systems, you aren't just looking for a developer—you're looking for me.
+
+TECHNICAL SKILLS
+- Blockchain & Web3: Rust, Solidity, Solana (Anchor), Libp2p, Gossipsub, UTXO Models, Smart Contracts
+- Full Stack Engineering: Python (Django/Flask), Node.js, Next.js, React, TypeScript, WebSocket
+- Systems & Cloud: Linux, Bash, Git, Docker, CI/CD, AWS, SQLite, RocksDB, PostgreSQL
+- Core Competencies: Distributed Systems, P2P Networking, Asynchronous Programming, Leadership
+
+ENGINEERING CASE STUDIES & EXPERIENCE
+
+Lead Software Architect | Prism OS (Open Source)
+2024 - Present
+Architected a decentralized, offline-first operating system focused on censorship resistance.
+- Concurrency at Scale: Overcame Python's GIL limitations by engineering a custom AsyncIO event loop to handle thousands of concurrent P2P connections without blocking.
+- Trust Topology: Designed a graph-based "Web of Trust" algorithm to calculate reputation scores locally, preventing sybil attacks in an anonymous network.
+- Traffic Visualization: Built a real-time network traffic visualizer using Canvas API to debug packet flow.
+
+Blockchain Engineer | Citadel Core
+2024 - Present
+Developed a high-performance blockchain node in Rust from scratch.
+- P2P Propagation: Implemented Gossipsub via Libp2p to optimize block broadcasting, reducing propagation latency by 40%.
+- Storage Optimization: Designed a RocksDB-based storage layer with a custom UTXO schema for heavily concurrent access.
+- Consensus Safety: Wrote rigorous unit and integration tests to verify consensus rules under high-load mining simulations.
+
+Full Stack Web3 Developer | Golden Banana (Solana Project)
+2024 - Present
+Built a comprehensive GameFi dApp on Solana using the Anchor framework and Next.js.
+- Smart Contract Logic: Engineered the "Feeding Protocol" program in Rust/Anchor, managing secure token state.
+- State Synchronization: Solved game state desync issues by implementing optimistic UI updates and WebSocket RPC subscriptions.
+- Wallet Integration: Integrated Solana adapter wallets (Phantom, Solflare) with robust error handling.
+
+Senior Frontend Engineer | FleetOps Management System
+2024 - Present
+Led the modernization of a legacy fleet management platform to React.
+- Code Quality Overhaul: Enforced strict linting (ESLint) and typing standards (TypeScript) to eliminate hydration mismatches.
+- Real-Time Tracking: Implemented map-based asset tracking using WebSocket feeds, optimizing re-renders for fleets with 500+ vehicles.
+
+Systems Engineer | Cloud Lite Coin
+2024 - Present
+Hardened network security and implemented AI-driven analysis tools.
+- Heuristic Analysis: Developed a static analysis tool (`will_it_halt`) to detect infinite loops in smart contract code.
+- Network Security: Audited and patched P2P listeners against DDOS vectors, implementing rate-limiting.
+
+PREVIOUS OPERATIONAL LEADERSHIP
+
+Python Developer | Tettares | Bangalore, India | 2013 - 2015
+- Architected full-stack modules on Django, engineered RESTful services with Flask.
+
+Store Manager | 7-Eleven | Denton, TX | 2018 - 2021
+- Commanded all store operations, holding full P&L responsibility.
+
+Marketing Manager | ColorBar Events | Bangalore, India | 2012 - 2013
+- Led data-driven market research and coordinate creative campaigns.
+
+Logistics & Transportation | National Express, DCTA | 2017 - Present
+- Entrusted with safety-critical transport operations and precise logistical scheduling.
+
+EDUCATION
+- Bachelor of Science, Computer Science | Manipal University
+- Associate Degree, Business & Hospitality | Nanyang Institute of Management
+
+CERTIFICATIONS
+- Google Cybersecurity Professional Certificate
+- Python for Everybody Specialization (University of Michigan)
+- Commercial Driver's License (Class B)

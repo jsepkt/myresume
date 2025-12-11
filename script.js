@@ -1,91 +1,98 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Stardust Canvas Animation ---
+    // --- 1. Subtle Tilt Effect ---
+    // Targeted interactions only, no global physics
+    const tiltElements = document.querySelectorAll("[data-tilt], .tech-logo, .skill-icon-wrap");
+    if (typeof VanillaTilt !== "undefined") {
+        VanillaTilt.init(tiltElements, {
+            max: 10, speed: 400, glare: true,
+            "max-glare": 0.3, scale: 1.02,
+            perspective: 1000
+        });
+
+        // Also init the main cards for the full Bento effect
+        const cardElements = document.querySelectorAll(".job-entry, .sidebar, .cert-card, .edu-item, .tech-toolkit-section, .profile-pic");
+        VanillaTilt.init(cardElements, {
+            max: 0, /* Disable rotation/tilt */
+            speed: 400, /* Snappy return */
+            glare: true,
+            "max-glare": 0.2,
+            scale: 1.03 /* Noticeable "enlarge" pop */
+        });
+    }
+
+    // --- 2. Constellation Background (Blue System) ---
     const canvas = document.getElementById('stardust-canvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
-        let stars = [];
-        let numStars = window.innerWidth < 768 ? 100 : 200; // Fewer stars on mobile
+        let width, height;
+        let particles = [];
 
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            numStars = window.innerWidth < 768 ? 100 : 200;
-            init();
+        // Config
+        const particleCount = 60;
+        const connectionDist = 120;
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
         }
+        window.addEventListener('resize', resize);
+        resize();
 
-        class Star {
+        class Particle {
             constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.vx = (Math.random() - 0.5) * 0.3;
-                this.vy = (Math.random() - 0.5) * 0.3;
-                this.radius = Math.random() * 1.5;
-                this.opacity = Math.random() * 0.5 + 0.2;
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.size = Math.random() * 2 + 1;
             }
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(0, 246, 255, ${this.opacity})`;
-                ctx.fill();
-            }
+
             update() {
                 this.x += this.vx;
                 this.y += this.vy;
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+                // Bounce
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+            }
+
+            draw() {
+                ctx.fillStyle = 'rgba(37, 99, 235, 0.4)'; // Blue
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
             }
         }
 
-        function init() {
-            stars = [];
-            for (let i = 0; i < numStars; i++) {
-                stars.push(new Star());
-            }
-        }
+        for (let i = 0; i < particleCount; i++) particles.push(new Particle());
 
         function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            stars.forEach(star => { star.update(); star.draw(); });
+            ctx.clearRect(0, 0, width, height);
+            const linkColor = 'rgba(37, 99, 235, '; // Blue
+
+            for (let i = 0; i < particles.length; i++) {
+                let p1 = particles[i];
+                p1.update();
+                p1.draw();
+
+                for (let j = i + 1; j < particles.length; j++) {
+                    let p2 = particles[j];
+                    let dx = p1.x - p2.x;
+                    let dy = p1.y - p2.y;
+                    let dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < connectionDist) {
+                        ctx.strokeStyle = linkColor + (1 - dist / connectionDist) * 0.2 + ')';
+                        ctx.beginPath();
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+            }
             requestAnimationFrame(animate);
         }
-        
-        resizeCanvas();
         animate();
-        window.addEventListener('resize', resizeCanvas);
     }
-
-    // --- Interactive Spotlight Cursor Effect ---
-    const isTouchDevice = () => 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    if (!isTouchDevice()) {
-        const page = document.querySelector('.page-container');
-        page.addEventListener('mousemove', e => {
-            page.style.setProperty('--mouse-x', `${e.clientX}px`);
-            page.style.setProperty('--mouse-y', `${e.clientY}px`);
-        });
-    }
-
-    // --- PDF Download Function with Print Styles ---
-    document.getElementById('download-btn').addEventListener('click', function() {
-        const element = document.getElementById('resume-to-download');
-        
-        // Temporarily add a class to the body to load print styles
-        document.body.classList.add('print-mode');
-        
-        const opt = {
-            margin: [0.5, 0.5, 0.5, 0.5], // inches
-            filename: 'Josekutty_Cheriyan_Profile.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true },
-            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-        };
-        
-        html2pdf().from(element).set(opt).save().then(() => {
-            // Remove the class after PDF generation is complete
-            document.body.classList.remove('print-mode');
-        });
-    });
-
-    // --- 3D Tilt Effect ---
-    VanillaTilt.init(document.querySelectorAll(".cert-card"), { max: 10, speed: 400, glare: true, "max-glare": 0.1 });
 });

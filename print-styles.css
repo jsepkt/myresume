@@ -1,69 +1,261 @@
-/* This stylesheet is ONLY applied during PDF generation */
-body.print-mode {
+/* --- "Sheets Resume 2025" Theme (Applied to .printable-resume clone) --- */
+.printable-resume {
     background: #fff !important;
     color: #000 !important;
+    font-family: 'Arial', 'Inter', sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.5 !important;
+    width: 100% !important;
+    max-width: 800px !important;
+    /* Standard Letter width */
+    margin: 0 auto !important;
+    padding: 40px !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 9999 !important;
+    /* Ensure visibility for capture */
 }
 
-body.print-mode #stardust-canvas {
+/* Hide Visual Noise & Icons */
+.printable-resume #stardust-canvas,
+.printable-resume #download-btn,
+.printable-resume .profile-pic,
+.printable-resume .name-initials,
+.printable-resume .employer-icon,
+.printable-resume .cert-card img,
+.printable-resume .tech-logo img,
+.printable-resume .edu-logo,
+.printable-resume .skill-icon-wrap i,
+.printable-resume .skill-icon-wrap::before,
+.printable-resume .tech-logo::before,
+.printable-resume i {
     display: none !important;
 }
 
-body.print-mode .page-container {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+/* --- Layout Reset --- */
+.printable-resume .page-container,
+.printable-resume .sidebar-wrapper,
+.printable-resume .main-content,
+.printable-resume .sidebar {
+    width: 100% !important;
+    min-width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
     background: none !important;
+    box-shadow: none !important;
+    display: block !important;
+    position: static !important;
+}
+
+/* --- Content Styling --- */
+
+/* Name & Header */
+.printable-resume .name-block {
+    text-align: left !important;
+    margin-bottom: 5px !important;
+}
+
+.printable-resume .full-name {
+    font-size: 24pt !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #2c3e50 !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+}
+
+.printable-resume .tagline {
+    font-size: 11pt !important;
+    color: #666 !important;
+    font-weight: normal !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+}
+
+/* Contact Row */
+.printable-resume .contact-block h3 {
+    display: none !important;
+}
+
+.printable-resume .contact-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    margin-bottom: 15px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.printable-resume .contact-item {
+    background: none !important;
+    padding: 0 !important;
+    border: none !important;
+    color: #333 !important;
+    font-size: 10pt !important;
+    text-decoration: none !important;
+}
+
+.printable-resume .contact-item span {
+    text-decoration: underline;
+}
+
+.printable-resume .location-row {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    color: #333 !important;
+    font-size: 10pt !important;
+}
+
+.printable-resume .location-row i {
+    display: none !important;
+}
+
+.printable-resume .location-row::before {
+    content: "| ";
+    margin-right: 5px;
+}
+
+/* Sections */
+.printable-resume h2,
+.printable-resume .sidebar-block h3 {
+    font-size: 14pt !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #2563eb !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding-bottom: 5px !important;
+    margin: 20px 0 15px 0 !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
     display: block !important;
 }
 
-body.print-mode .sidebar-wrapper {
-    width: 30% !important;
-    float: left;
-    height: auto !important;
-    background: #fff !important;
-    border: 1px solid #ddd !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    padding: 20px;
+/* Experience Entries */
+.printable-resume .job-entry,
+.printable-resume .tech-toolkit-section,
+.printable-resume .card-grid {
+    margin-bottom: 20px !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
     border-radius: 0 !important;
 }
 
-body.print-mode .main-content {
-    width: 70% !important;
-    float: left;
-    padding: 20px !important;
+.printable-resume .job-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    margin-bottom: 5px !important;
 }
 
-body.print-mode h1, body.print-mode h2, body.print-mode h3, body.print-mode h4, body.print-mode p, body.print-mode a, body.print-mode span, body.print-mode div, body.print-mode li {
+.printable-resume .job-title-group {
+    width: 100% !important;
+}
+
+.printable-resume .job-title-group h3 {
+    font-size: 12pt !important;
     color: #000 !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+}
+
+.printable-resume .job-title-group h4 {
+    font-size: 11pt !important;
+    color: #000 !important;
+    font-style: italic !important;
+    float: right !important;
+    font-weight: normal !important;
+}
+
+/* Lists */
+.printable-resume .tech-challenges,
+.printable-resume .compact-role-list {
+    margin-top: 5px !important;
+    padding-left: 20px !important;
+}
+
+.printable-resume li {
+    list-style: disc !important;
+    margin-bottom: 3px !important;
+    color: #333 !important;
+}
+
+/* Skills & Toolkit (Linear) */
+.printable-resume .interactive-skills-grid,
+.printable-resume .tech-logo-grid {
+    display: block !important;
+}
+
+.printable-resume .skill-icon-wrap,
+.printable-resume .tech-logo {
+    display: inline-block !important;
     background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 5px 5px 0 !important;
+    width: auto !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    box-shadow: none !important;
 }
 
-body.print-mode .name-initials { font-size: 2rem; }
-body.print-mode .full-name { font-size: 1.2rem; }
-body.print-mode .tagline { color: #555 !important; }
-
-body.print-mode .cert-card, body.print-mode .job-entry, body.print-mode .edu-item {
-    background: #f9f9f9 !important;
-    border: 1px solid #eee !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    animation: none !important;
+.printable-resume .skill-icon-wrap::after,
+.printable-resume .tech-logo::after {
+    content: attr(data-skill) !important;
+    position: static !important;
+    opacity: 1 !important;
+    background: none !important;
+    color: #000 !important;
+    font-size: 10pt !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
-body.print-mode #download-btn, 
-body.print-mode .skill-icon-wrap, 
-body.print-mode .employer-icon, 
-body.print-mode .cert-card img, 
-body.print-mode .social-links,
-body.print-mode .michigan-logo {
-    display: none !important;
+.printable-resume .tech-logo::after {
+    content: attr(data-tech) !important;
 }
 
-body.print-mode .job-header {
-    margin-bottom: 8px;
+/* Commas */
+.printable-resume .skill-icon-wrap:not(:last-child)::after,
+.printable-resume .tech-logo:not(:last-child)::after {
+    content: attr(data-skill) ", " !important;
 }
 
-body.print-mode a {
-    text-decoration: none;
+.printable-resume .tech-logo:not(:last-child)::after {
+    content: attr(data-tech) ", " !important;
+}
+
+/* Education */
+.printable-resume .edu-item {
+    display: block !important;
+    margin-bottom: 10px !important;
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.printable-resume .edu-item h3 {
+    font-size: 11pt !important;
+    font-weight: bold !important;
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    color: #000 !important;
+}
+
+.printable-resume .edu-item p {
+    display: inline !important;
+    float: right !important;
+    color: #333 !important;
 }
