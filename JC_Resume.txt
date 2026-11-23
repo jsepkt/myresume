@@ -3,17 +3,31 @@ Josekutty Cheriyan
 1004 Meadow Hill St, Denton, Texas, 76209 USA
 LinkedIn: linkedin.com/in/josekutty-cheriyan-66177061 | GitHub: github.com/jsepkt
 
-BUILDING THE DECENTRALIZED FUTURE
-I don't just write code; I architect resilience.
-As a Senior Blockchain Architect and Systems Engineer, I operate at the bleeding edge of what's possible in decentralized technology. From engineering censorship-resistant operating systems (Prism OS) to optimizing high-frequency blockchain nodes (Citadel), my work defines the next generation of the internet. If you are solving the hardest problems in Web3, P2P networking, or high-concurrency systems, you aren't just looking for a developer—you're looking for me.
+MANUFACTURING TECHNOLOGY & INFRASTRUCTURE
+Infrastructure and technology leader with 7+ years spanning software engineering, cybersecurity, retail operations, logistics, and business ownership. Experienced at translating operational workflows into practical technology requirements, managing inventory and procurement activities, coordinating cross-functional stakeholders, and supporting secure, reliable operations.
 
 TECHNICAL SKILLS
-- Blockchain & Web3: Rust, Solidity, Solana (Anchor), Libp2p, Gossipsub, UTXO Models, Smart Contracts
-- Full Stack Engineering: Python (Django/Flask), Node.js, Next.js, React, TypeScript, WebSocket
-- Systems & Cloud: Linux, Bash, Git, Docker, CI/CD, AWS, SQLite, RocksDB, PostgreSQL
-- Core Competencies: Distributed Systems, P2P Networking, Asynchronous Programming, Leadership
+- Manufacturing & Operations: Workflow Mapping, Inventory Operations, Receiving, Merchandising, Asset Management, BOM Planning, Lifecycle Management
+- Infrastructure & Security: Endpoint Engineering, Networking, Device Standards, Vulnerability Management, Risk Mitigation, Cybersecurity
+- ERP/MES Readiness: POS and inventory workflows, operational reporting, barcode and labeling operations, ERP/MES transformation readiness
+- Systems & Development: Python, Django, Flask, SQL, Linux, AWS, REST APIs, Git, Docker
+- Regulated Environment Readiness: Familiar with FDA QMSR concepts, ISO 13485, 21 CFR Part 11, UDI/barcode controls, and CSV concepts; interested in applying these in a medical-device program
+- Core Competencies: Site Assessment, Procurement, Vendor Coordination, P&L Management, Cross-Functional Leadership, Logistics
 
-ENGINEERING CASE STUDIES & EXPERIENCE
+PROFESSIONAL EXPERIENCE
+
+Founder & Technology Lead | Pillow Gold | Denton, TX
+2021 - Present
+- Own product strategy and delivery for a blockchain technology company.
+- Lead architecture, vendor evaluation, security-first implementation, and client technology engagement.
+- Manage distributed delivery teams and translate complex business requirements into reliable production solutions.
+- Portfolio includes 50+ projects and 200+ deployed smart contracts.
+
+Store Manager | 7-Eleven | Denton, TX
+2018 - 2021
+- Managed multi-shift retail operations, inventory, receiving, merchandising, cash controls, maintenance coordination, and compliance processes.
+- Used POS and merchandising systems to maintain stock availability, prevent loss, resolve issues, and sustain operational readiness.
+- Held P&L responsibility and led employee scheduling, training, vendor support, and cross-functional store operations.
 
 Lead Software Architect | Prism OS (Open Source)
 2024 - Present
@@ -52,9 +66,6 @@ PREVIOUS OPERATIONAL LEADERSHIP
 
 Python Developer | Tettares | Bangalore, India | 2013 - 2015
 - Architected full-stack modules on Django, engineered RESTful services with Flask.
-
-Store Manager | 7-Eleven | Denton, TX | 2018 - 2021
-- Commanded all store operations, holding full P&L responsibility.
 
 Marketing Manager | ColorBar Events | Bangalore, India | 2012 - 2013
 - Led data-driven market research and coordinate creative campaigns.
